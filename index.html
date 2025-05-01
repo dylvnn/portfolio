@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dylan Nguyen | Software Engineer</title>
+  <meta name="description" content="Dylan Nguyen - Software Engineer and Computer Science Student specializing in Python, C++, Java, and UI/UX Design">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="main-layout">
+    <!-- Header & Navigation -->
+    <header>
+      <div class="container">
+        <nav>
+          <div class="logo">
+            <a href="index.html">Dylan<span>Nguyen</span></a>
+          </div>
+          <ul class="nav-links">
+            <li><a href="#hero" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div class="nav-toggle">
+            <i class="fas fa-bars"></i>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text animate fade-in-element">
+            <h1>Hi, I'm <span>Dylan Nguyen</span></h1>
+            <p>Aspiring Software Engineer & Computer Science Student at CSUF</p>
+            <p>Building robust, user-centered software solutions with a passion for solving complex problems</p>
+            <a href="#projects" class="btn">View My Work</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+          </div>
+          <div class="hero-image animate slide-in-right-element">
+            <img src="images/profile.png" alt="Dylan Nguyen">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">About <span>Me</span></h2>
+        <div class="about-content">
+          <div class="about-text animate slide-in-left-element">
+            <p>Aspiring Software Engineer with a foundation in programming, data analysis, and user-centered application development. Currently pursuing a B.S. in Computer Science at California State University, Fullerton (expected graduation: 2025).</p>
+            <p>With a background as a Mortgage Loan Officer, I bring 4 years of experience in financial consulting, client communication, and business development to my software engineering career. This diverse background has honed my problem-solving abilities and communication skills, enabling me to bridge the gap between technical solutions and user needs.</p>
+            <p>I'm passionate about developing software that solves real-world problems and delivers exceptional user experiences. I enjoy tackling complex challenges and continuously expanding my technical knowledge.</p>
+            <div class="skills-list">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">C++</span>
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">SQL</span>
+              <span class="skill-tag">HTML/CSS</span>
+              <span class="skill-tag">JavaScript</span>
+            </div>
+            <a href="resources/Dylan_Nguyen_Resume.pdf" class="btn resume-link" target="_blank">Download Resume</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <div class="container">
+        <h2 class="section-title">My <span>Projects</span></h2>
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="project-card animate fade-in-element">
+            <div class="project-img">
+              <img src="images/project-nitinol.jpg" alt="Nitinol Material Property Calibration App">
+            </div>
+            <div class="project-info">
+              <h3>Nitinol Material Property Calibration App</h3>
+              <div class="project-tags">
+                <span class="project-tag">Python</span>
+                <span class="project-tag">PyQt</span>
+                <span class="project-tag">Pandas</span>
+                <span class="project-tag">Matplotlib</span>
+              </div>
+              <p>Built for Edwards Lifesciences to analyze Nitinol's stress-strain behavior in transcatheter heart valves.</p>
+              <a href="projects/nitinol.html" class="btn">View Details</a>
+            </div>
+          </div>
+          
+          <!-- Project 2 -->
+          <div class="project-card animate fade-in-element">
+            <div class="project-img">
+              <img src="images/project-fitai.jpg" alt="FitAI: AI-Powered Fitness & Nutrition Recommender">
+            </div>
+            <div class="project-info">
+              <h3>FitAI: Fitness & Nutrition Recommender</h3>
+              <div class="project-tags">
+                <span class="project-tag">Python</span>
+                <span class="project-tag">AI</span>
+                <span class="project-tag">Algorithms</span>
+              </div>
+              <p>Smart assistant that generates meal plans and workout routines based on user goals and constraints.</p>
+              <a href="projects/fitai.html" class="btn">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <div class="container">
+        <h2 class="section-title">My <span>Skills</span></h2>
+        <div class="skills-container">
+          <!-- Programming Languages -->
+          <div class="skill-category animate fade-in-element">
+            <h3>Programming Languages</h3>
+            <div class="skill-items">
+              <div class="skill-item">Python</div>
+              <div class="skill-item">C++</div>
+              <div class="skill-item">Java</div>
+              <div class="skill-item">SQL</div>
+              <div class="skill-item">HTML/CSS</div>
+              <div class="skill-item">JavaScript</div>
+            </div>
+          </div>
+          
+          <!-- Libraries & Tools -->
+          <div class="skill-category animate fade-in-element">
+            <h3>Libraries & Tools</h3>
+            <div class="skill-items">
+              <div class="skill-item">PyQt</div>
+              <div class="skill-item">Pandas</div>
+              <div class="skill-item">Matplotlib</div>
+              <div class="skill-item">VS Code</div>
+              <div class="skill-item">Eclipse</div>
+              <div class="skill-item">PyCharm</div>
+            </div>
+          </div>
+          
+          <!-- Concepts -->
+          <div class="skill-category animate fade-in-element">
+            <h3>Concepts</h3>
+            <div class="skill-items">
+              <div class="skill-item">OOP</div>
+              <div class="skill-item">Data Structures</div>
+              <div class="skill-item">Algorithms</div>
+              <div class="skill-item">Software Design</div>
+              <div class="skill-item">UI Development</div>
+              <div class="skill-item">Search Algorithms</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact <span>Me</span></h2>
+        <div class="contact-container">
+          <div class="contact-info animate slide-in-left-element">
+            <h3>Get In Touch</h3>
+            <p>Feel free to reach out if you're looking for a dedicated software engineer, have a question, or just want to connect.</p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:dylannguyen501@gmail.com">dylannguyen501@gmail.com</a></p>
+            <p><i class="fas fa-phone"></i> (949) 466-4250</p>
+            <p><i class="fas fa-map-marker-alt"></i> Huntington Beach, CA 92647</p>
+            <div class="social-links">
+              <a href="https://github.com/dylvnn" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+              <a href="https://linkedin.com/in/dylanxnguyen" target="_blank" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <div class="contact-form animate slide-in-right-element">
+            <form id="contact-form">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your email" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Your message" required></textarea>
+              </div>
+              <button type="submit" class="btn">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Dylan Nguyen. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Custom JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>

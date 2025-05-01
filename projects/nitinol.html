@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nitinol Material Property Calibration App | Dylan Nguyen</title>
+  <meta name="description" content="Nitinol Material Property Calibration App - A project by Dylan Nguyen for Edwards Lifesciences to analyze Nitinol's stress-strain behavior in transcatheter heart valves.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <div class="main-layout">
+    <!-- Header & Navigation -->
+    <header>
+      <div class="container">
+        <nav>
+          <div class="logo">
+            <a href="../index.html">Dylan<span>Nguyen</span></a>
+          </div>
+          <ul class="nav-links">
+            <li><a href="../index.html#hero">Home</a></li>
+            <li><a href="../index.html#about">About</a></li>
+            <li><a href="../index.html#projects" class="active">Projects</a></li>
+            <li><a href="../index.html#skills">Skills</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+          </ul>
+          <div class="nav-toggle">
+            <i class="fas fa-bars"></i>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Project Details Section -->
+    <section class="project-details">
+      <div class="container">
+        <div class="project-header">
+          <h1>Nitinol Material Property Calibration App</h1>
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">PyQt</span>
+            <span class="project-tag">Pandas</span>
+            <span class="project-tag">Matplotlib</span>
+            <span class="project-tag">Data Analysis</span>
+            <span class="project-tag">GUI Development</span>
+          </div>
+        </div>
+        
+        <div class="project-gallery">
+          <div class="gallery-item">
+            <img src="../images/nitinol-1.jpg" alt="Nitinol App Main Interface">
+          </div>
+          <div class="gallery-item">
+            <img src="../images/nitinol-2.jpg" alt="Nitinol Data Visualization">
+          </div>
+          <div class="gallery-item">
+            <img src="../images/nitinol-3.jpg" alt="Hysteresis Loop Detection">
+          </div>
+        </div>
+        
+        <div class="project-description">
+          <h2>Project Overview</h2>
+          <p>This application was developed as a capstone project for Edwards Lifesciences, a leading medical device company specializing in heart valves and hemodynamic monitoring. The Nitinol Material Property Calibration App analyzes the stress-strain behavior of Nitinol alloy used in transcatheter heart valves.</p>
+          
+          <h3>The Challenge</h3>
+          <p>Engineers at Edwards Lifesciences needed a tool to efficiently analyze raw experimental data from mechanical tests on Nitinol specimens. The key requirements were:</p>
+          <ul>
+            <li>Visualize mechanical properties of Nitinol alloy</li>
+            <li>Identify and extract hysteresis loops from raw data</li>
+            <li>Process and smooth noisy experimental data</li>
+            <li>Export processed data for further analysis and simulation</li>
+            <li>Create an intuitive interface for engineers to use without programming expertise</li>
+          </ul>
+          
+          <h3>My Solution</h3>
+          <p>I developed a desktop application using Python with PyQt for the GUI, Pandas for data processing, and Matplotlib for visualization. The application features:</p>
+          <ul>
+            <li>A clean, intuitive user interface allowing engineers to load, visualize, and process data</li>
+            <li>Custom algorithms for data smoothing and cycle detection</li>
+            <li>Interactive visualization of stress-strain curves with zoom and pan capabilities</li>
+            <li>Automated identification and extraction of hysteresis loops</li>
+            <li>Data export functionality in various formats for integration with simulation software</li>
+            <li>Comprehensive error handling and user feedback mechanisms</li>
+          </ul>
+        </div>
+        
+        <div class="project-meta">
+          <div class="meta-item">
+            <h4>Technical Details</h4>
+            <div class="tech-stack">
+              <span class="project-tag">Python 3.9</span>
+              <span class="project-tag">PyQt5</span>
+              <span class="project-tag">Pandas</span>
+              <span class="project-tag">Matplotlib</span>
+              <span class="project-tag">NumPy</span>
+              <span class="project-tag">SciPy</span>
+            </div>
+          </div>
+          
+          <div class="meta-item">
+            <h4>Key Achievements</h4>
+            <ul>
+              <li>Reduced analysis time by 75% compared to manual methods</li>
+              <li>Improved data accuracy through custom smoothing algorithms</li>
+              <li>Provided consistent results across different test specimens</li>
+              <li>Created detailed documentation for future maintenance</li>
+            </ul>
+          </div>
+          
+          <div class="meta-item">
+            <h4>Skills Applied</h4>
+            <ul>
+              <li>GUI Development with PyQt</li>
+              <li>Signal Processing</li>
+              <li>Data Visualization</li>
+              <li>Algorithm Design</li>
+              <li>User Experience Design</li>
+              <li>Client Communication</li>
+            </ul>
+          </div>
+        </div>
+        
+        <h3>Development Process</h3>
+        <p>The project was completed over a 12-week period following these phases:</p><br>
+        <ul>
+          <li><strong>Requirements Gathering:</strong> Met with engineers to understand their workflow and needs</li>
+          <li><strong>Data Understanding:</strong> Analyzed raw test data to understand its structure and challenges</li>
+          <li><strong>Prototype Development:</strong> Created an initial version with basic functionality</li>
+          <li><strong>Algorithm Development:</strong> Designed custom algorithms for data processing</li>
+          <li><strong>UI Implementation:</strong> Built the complete user interface with all necessary features</li>
+          <li><strong>Testing & Validation:</strong> Conducted thorough testing with real data and user feedback</li>
+          <li><strong>Documentation & Delivery:</strong> Created documentation and delivered the final product</li>
+        </ul><br>
+
+        <h3>Challenges & Solutions</h3>
+        <p>Throughout the development process, I encountered and solved several challenges:</p><br>
+        <ul>
+          <li><strong>Noisy Data:</strong> Implemented adaptive Savitzky-Golay filters to smooth data while preserving important features</li>
+          <li><strong>Hysteresis Loop Detection:</strong> Developed a custom algorithm that automatically identifies loading/unloading cycles</li>
+          <li><strong>Performance Optimization:</strong> Improved application responsiveness when handling large datasets through efficient data structures</li>
+          <li><strong>User Experience:</strong> Iteratively refined the interface based on user feedback to ensure intuitive operation</li>
+        </ul><br>
+        
+        <h3>Lessons Learned</h3>
+        <p>This project taught me valuable lessons about:</p>
+        <ul>
+          <li>The importance of early and continuous stakeholder involvement</li>
+          <li>Balancing technical complexity with user experience</li>
+          <li>Implementing effective error handling for scientific applications</li>
+          <li>The value of thorough documentation for specialized tools</li>
+        </ul>
+        
+        <a href="../index.html#projects" class="btn back-link"><i class="fas fa-arrow-left"></i> Back to Projects</a>
+      </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Dylan Nguyen. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Custom JavaScript -->
+  <script src="../js/script.js"></script>
+</body>
+</html>

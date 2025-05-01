@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitAI: Fitness & Nutrition Recommender | Dylan Nguyen</title>
+  <meta name="description" content="FitAI - An AI-powered fitness and nutrition recommender that generates personalized meal plans and workout routines based on user goals and constraints.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <!-- Header & Navigation -->
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">
+          <a href="../index.html">Dylan<span>Nguyen</span></a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="../index.html#hero">Home</a></li>
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../index.html#projects" class="active">Projects</a></li>
+          <li><a href="../index.html#skills">Skills</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+        <div class="nav-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Project Details Section -->
+  <section class="project-details">
+    <div class="container">
+      <div class="project-header">
+        <h1>FitAI: AI-Powered Fitness & Nutrition Recommender</h1>
+        <div class="project-tags">
+          <span class="project-tag">Python</span>
+          <span class="project-tag">AI</span>
+          <span class="project-tag">Search Algorithms</span>
+          <span class="project-tag">Constraint Satisfaction</span>
+        </div>
+      </div>
+      
+      <div class="project-gallery">
+        <div class="gallery-item">
+          <img src="../images/fitai-1.jpg" alt="FitAI User Interface">
+        </div>
+        <div class="gallery-item">
+          <img src="../images/fitai-2.jpg" alt="Workout Plan Generation">
+        </div>
+        <div class="gallery-item">
+          <img src="../images/fitai-3.jpg" alt="Nutrition Plan Visualization">
+        </div>
+      </div>
+      
+      <div class="project-description">
+        <h2>Project Overview</h2>
+        <p>FitAI is an intelligent assistant that generates personalized meal plans and workout routines based on user goals, preferences, and constraints. This project demonstrates the application of AI techniques, particularly search algorithms and constraint satisfaction problems (CSPs), to create practical solutions in the fitness and nutrition domain.</p>
+        
+        <h3>The Challenge</h3>
+        <p>Creating personalized fitness and nutrition plans is complex due to multiple competing factors:</p>
+        <ul>
+          <li>Different user goals (weight loss, muscle gain, endurance, etc.)</li>
+          <li>Dietary restrictions and preferences</li>
+          <li>Available equipment and time constraints</li>
+          <li>Need for balanced workout routines that target all muscle groups</li>
+          <li>Nutritional adequacy while respecting calorie targets</li>
+          <li>Progressive overload principles for effective workouts</li>
+        </ul>
+        
+        <h3>My Solution</h3>
+        <p>I developed a system with two main components:</p>
+        
+        <h4>1. Workout Planner</h4>
+        <p>The workout planning component uses A* search algorithm to generate optimal workout routines. It:</p>
+        <ul>
+          <li>Balances different muscle groups to prevent overtraining</li>
+          <li>Considers available equipment constraints</li>
+          <li>Optimizes for time efficiency</li>
+          <li>Incorporates progressive overload principles</li>
+          <li>Adapts to user fitness level and goals</li>
+        </ul>
+        
+        <h4>2. Nutrition Recommender</h4>
+        <p>The nutrition component uses constraint satisfaction techniques to create meal plans that:</p>
+        <ul>
+          <li>Meet calorie and macronutrient targets based on user goals</li>
+          <li>Respect dietary restrictions (vegetarian, gluten-free, etc.)</li>
+          <li>Include preferred foods while excluding disliked items</li>
+          <li>Ensure adequate micronutrient intake</li>
+          <li>Provide variety to prevent diet monotony</li>
+        </ul>
+      </div>
+      
+      <div class="project-meta">
+        <div class="meta-item">
+          <h4>Technical Details</h4>
+          <div class="tech-stack">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">A* Search</span>
+            <span class="project-tag">Constraint Satisfaction</span>
+            <span class="project-tag">PyQt (UI)</span>
+            <span class="project-tag">Pandas</span>
+            <span class="project-tag">Matplotlib</span>
+          </div>
+        </div>
+        
+        <div class="meta-item">
+          <h4>Key Achievements</h4>
+          <ul>
+            <li>Implemented A* search with custom heuristics for workout optimization</li>
+            <li>Developed a CSP solver with backtracking for nutrition planning</li>
+            <li>Created a comprehensive database of exercises and nutritional information</li>
+            <li>Built an intuitive user interface to collect preferences and display results</li>
+          </ul>
+        </div>
+        
+        <div class="meta-item">
+          <h4>Skills Applied</h4>
+          <ul>
+            <li>AI Algorithm Implementation</li>
+            <li>Heuristic Design</li>
+            <li>Problem Modeling</li>
+            <li>Data Structure Optimization</li>
+            <li>User Experience Design</li>
+            <li>Domain Knowledge Application</li>
+          </ul>
+        </div>
+      </div>
+      
+      <h3>Implementation Details</h3>
+      
+      <h4>A* Search for Workout Planning</h4>
+      <p>The workout planning algorithm uses A* search with the following components:</p>
+      <ul>
+        <li><strong>State Representation:</strong> Current muscle group coverage, exercise selection, and time allocation</li>
+        <li><strong>Actions:</strong> Adding exercises to the routine</li>
+        <li><strong>Goal Test:</strong> Complete coverage of targeted muscle groups within time constraints</li>
+        <li><strong>Path Cost:</strong> Time spent on exercises</li>
+        <li><strong>Heuristic Function:</strong> Estimated time to complete remaining muscle group coverage</li>
+      </ul>
+      
+      <h4>CSP for Nutrition Planning</h4>
+      <p>The nutrition planning algorithm uses constraint satisfaction with:</p>
+      <ul>
+        <li><strong>Variables:</strong> Meals and food items in each meal</li>
+        <li><strong>Domains:</strong> Available food items appropriate for each meal type</li>
+        <li><strong>Constraints:</strong> 
+          <ul>
+            <li>Caloric constraints based on user goals</li>
+            <li>Macronutrient distribution</li>
+            <li>Dietary preferences and restrictions</li>
+            <li>Micronutrient adequacy</li>
+            <li>Meal variety</li>
+          </ul>
+        </li>
+      </ul>
+      
+      <h3>Challenges & Solutions</h3>
+      <p>Throughout the development process, I encountered and solved several challenges:</p>
+      <ul>
+        <li><strong>Search Space Size:</strong> Implemented aggressive pruning strategies to manage the large search space</li>
+        <li><strong>Domain Knowledge Integration:</strong> Collaborated with fitness and nutrition experts to incorporate evidence-based principles</li>
+        <li><strong>Performance Optimization:</strong> Improved algorithm efficiency to generate plans in near real-time</li>
+        <li><strong>User Feedback Integration:</strong> Added mechanisms to learn from user feedback and improve recommendations</li>
+      </ul>
+      
+      <h3>Outcome & Impact</h3>
+      <p>FitAI demonstrates how AI techniques can be applied to create practical tools that improve health and fitness outcomes. Key impacts include:</p>
+      <ul>
+        <li>Providing accessible, personalized fitness and nutrition guidance</li>
+        <li>Accommodating diverse user needs and constraints</li>
+        <li>Applying theoretical AI concepts to solve real-world problems</li>
+        <li>Creating a foundation for more sophisticated health and wellness applications</li>
+      </ul>
+      
+      <h3>Future Enhancements</h3>
+      <p>Potential future developments for this project include:</p>
+      <ul>
+        <li>Integration with wearable fitness devices for real-time adaptation</li>
+        <li>Implementing machine learning to improve recommendations based on user outcomes</li>
+        <li>Expanding the nutritional database and recommendation capabilities</li>
+        <li>Developing a mobile application for improved accessibility</li>
+      </ul>
+      
+      <a href="../index.html#projects" class="btn back-link"><i class="fas fa-arrow-left"></i> Back to Projects</a>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Dylan Nguyen. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Custom JavaScript -->
+  <script src="../js/script.js"></script>
+</body>
+</html>

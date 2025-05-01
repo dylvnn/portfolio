@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | E-commerce Website Project</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="assets/js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">My Portfolio</a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html" class="active">Projects</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="project-header">
+            <div class="container">
+                <div class="back-to-projects">
+                    <a href="projects.html"><i class="fas fa-arrow-left"></i> Back to Projects</a>
+                </div>
+                <h1>E-commerce Website</h1>
+                <div class="project-meta">
+                    <span class="project-date">Completed: January 2025</span>
+                    <span class="project-category">Web Development</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-showcase">
+            <div class="container">
+                <div class="project-gallery">
+                    <div class="main-image">
+                        <img src="assets/images/project-placeholder.jpg" alt="E-commerce Website">
+                    </div>
+                    <div class="thumbnail-images">
+                        <img src="assets/images/project-placeholder.jpg" alt="Screenshot 1" class="thumbnail">
+                        <img src="assets/images/project-placeholder.jpg" alt="Screenshot 2" class="thumbnail">
+                        <img src="assets/images/project-placeholder.jpg" alt="Screenshot 3" class="thumbnail">
+                        <img src="assets/images/project-placeholder.jpg" alt="Screenshot 4" class="thumbnail">
+                    </div>
+                </div>
+
+                <div class="project-details">
+                    <div class="project-description">
+                        <h2>Project Overview</h2>
+                        <p>This e-commerce website was built to provide a seamless online shopping experience. It features a clean, intuitive user interface, product categorization, search functionality, shopping cart, user authentication, and a secure checkout process.</p>
+                        
+                        <h2>Technical Details</h2>
+                        <p>The website was built using the MERN stack (MongoDB, Express.js, React.js, Node.js) with additional technologies and services for various functionalities.</p>
+                        
+                        <div class="tech-used">
+                            <h3>Technologies Used:</h3>
+                            <ul>
+                                <li><strong>Frontend:</strong> React.js, Redux for state management, Styled Components for styling</li>
+                                <li><strong>Backend:</strong> Node.js, Express.js, MongoDB for database</li>
+                                <li><strong>Authentication:</strong> JWT (JSON Web Tokens)</li>
+                                <li><strong>Payment Processing:</strong> Integration with Stripe API</li>
+                                <li><strong>Deployment:</strong> AWS EC2, Nginx for serving static files</li>
+                                <li><strong>Version Control:</strong> Git, GitHub</li>
+                            </ul>
+                        </div>
+                        
+                        <h2>Challenges & Solutions</h2>
+                        <p>During the development of this project, several challenges were encountered and addressed:</p>
+                        
+                        <div class="challenge-solution">
+                            <h3>Challenge 1: Shopping Cart Persistence</h3>
+                            <p>Users needed their cart items to persist across sessions, even before account creation.</p>
+                            <h4>Solution:</h4>
+                            <p>Implemented a system that stores cart data in local storage for non-authenticated users, which then syncs with the database once they sign in.</p>
+                        </div>
+                        
+                        <div class="challenge-solution">
+                            <h3>Challenge 2: Product Search Optimization</h3>
+                            <p>The initial search functionality was slow with large product catalogs.</p>
+                            <h4>Solution:</h4>
+                            <p>Implemented indexing in MongoDB and added server-side filtering with pagination to improve search performance.</p>
+                        </div>
+                        
+                        <h2>Outcome & Results</h2>
+                        <p>The completed e-commerce platform has successfully:</p>
+                        <ul>
+                            <li>Reduced page load times by 40% compared to the client's previous solution</li>
+                            <li>Improved mobile conversion rates by 25%</li>
+                            <li>Simplified the checkout process, reducing cart abandonment by 15%</li>
+                            <li>Integrated with existing inventory management systems</li>
+                        </ul>
+                        
+                        <div class="project-links">
+                            <h3>Links:</h3>
+                            <a href="https://example-ecommerce.com" target="_blank" class="btn primary-btn">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/yourusername/ecommerce-project" target="_blank" class="btn secondary-btn">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="more-projects">
+            <div class="container">
+                <h2>More Projects</h2>
+                <div class="related-projects">
+                    <div class="related-project-card">
+                        <img src="assets/images/project-placeholder.jpg" alt="Finance App UI Design">
+                        <h3>Finance App UI Design</h3>
+                        <a href="project2.html" class="btn small-btn">View Project</a>
+                    </div>
+                    <div class="related-project-card">
+                        <img src="assets/images/project-placeholder.jpg" alt="Weather Application">
+                        <h3>Weather Application</h3>
+                        <a href="project3.html" class="btn small-btn">View Project</a>
+                    </div>
+                    <div class="related-project-card">
+                        <img src="assets/images/project-placeholder.jpg" alt="Fitness Tracker Mobile App">
+                        <h3>Fitness Tracker Mobile App</h3>
+                        <a href="project4.html" class="btn small-btn">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Your Name</h3>
+                    <p>Web Developer & Designer</p>
+                    <p>Based in Your Location</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Connect With Me</h3>
+                    <div class="social-icons">
+                        <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2025</span> Your Name. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

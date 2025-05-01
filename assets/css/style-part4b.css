@@ -1,0 +1,195 @@
+/* 
+* Portfolio Website CSS - Part 4B: Project Details
+* Author: Your Name
+* Version: 1.0
+*/
+
+.project-details h2 {
+    font-size: var(--h2-size);
+    font-family: var(--heading-font);
+    margin-bottom: 1.5rem;
+    margin-top: 3rem;
+    color: var(--text-color);
+    position: relative;
+    padding-bottom: 0.75rem;
+}
+
+.project-details h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 4px;
+    background-color: var(--primary-color);
+    border-radius: 2px;
+}
+
+.project-details h3 {
+    font-size: var(--h3-size);
+    font-family: var(--heading-font);
+    margin-bottom: 1rem;
+    margin-top: 2.5rem;
+    color: var(--text-color);
+}
+
+.project-details h4 {
+    font-size: var(--h4-size);
+    font-family: var(--heading-font);
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: var(--primary-color);
+}
+
+.project-details p {
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+    line-height: 1.7;
+}
+
+.project-details ul {
+    padding-left: 1.25rem;
+    margin-bottom: 2rem;
+    list-style-type: none;
+}
+
+.project-details li {
+    margin-bottom: 0.75rem;
+    color: var(--text-color);
+    position: relative;
+}
+
+.project-details li::before {
+    content: '';
+    position: absolute;
+    left: -1.25rem;
+    top: 0.5rem;
+    width: 6px;
+    height: 6px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+}
+
+.tech-used {
+    margin-bottom: 3rem;
+    background-color: var(--bg-light);
+    padding: 2rem;
+    border-radius: var(--radius-lg);
+}
+
+.tech-used h3 {
+    margin-top: 0 !important;
+}
+
+.challenge-solution {
+    margin-bottom: 2.5rem;
+    padding: 2rem;
+    background-color: var(--bg-light);
+    border-radius: var(--radius-lg);
+    border-left: 5px solid var(--primary-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.challenge-solution::before {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(67, 97, 238, 0.1) 0%, rgba(114, 9, 183, 0.03) 100%);
+    filter: blur(70px);
+    bottom: -150px;
+    right: -150px;
+    z-index: 0;
+}
+
+.challenge-solution h3 {
+    margin-top: 0 !important;
+}
+
+.project-links {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.project-links h3 {
+    margin-bottom: 1.5rem;
+    margin-top: 0 !important;
+}
+
+.project-links .btn {
+    min-width: 180px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.more-projects {
+    padding: 100px 0;
+    background-color: var(--bg-light);
+    position: relative;
+    overflow: hidden;
+}
+
+.more-projects::before {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(67, 97, 238, 0.2) 0%, rgba(114, 9, 183, 0.05) 100%);
+    filter: blur(70px);
+    top: -150px;
+    right: -150px;
+    z-index: 0;
+}
+
+.related-projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.related-project-card {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.related-project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-lg);
+}
+
+.related-project-card img {
+    border-radius: var(--radius-md);
+    margin-bottom: 1.5rem;
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.related-project-card:hover img {
+    transform: scale(1.05);
+    border-radius: var(--radius-lg);
+}
+
+.related-project-card h3 {
+    font-size: var(--h4-size);
+    font-family: var(--heading-font);
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+}
