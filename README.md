@@ -91,28 +91,6 @@ portfolio/
 │
 └── README.md               # Documentation
 ```
-
-## Deployment
-
-This site can be deployed using GitHub Pages:
-
-1. Push the repository to GitHub
-2. Go to repository settings
-3. Navigate to GitHub Pages section
-4. Select the main branch as the source
-5. Your site will be published at `https://username.github.io/portfolio/`
-
-## Future Enhancements
-
-Potential future improvements for this portfolio:
-
-- Add a blog section to showcase thoughts and technical articles
-- Implement a dark/light mode toggle
-- Add more interactive project demonstrations
-- Integrate a backend for the contact form functionality
-- Add a dedicated photography or media gallery
-- Incorporate more advanced animations and transitions
-
 ## Contact
 
 Dylan Nguyen - dylannguyen501@csu.fullerton.edu
